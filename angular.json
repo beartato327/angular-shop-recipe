@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-shop-recipe": {
+    "course-project-cmp-databinding-final": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/angular-shop-recipe",
+            "outputPath": "dist/course-project-cmp-databinding-final",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -38,12 +38,7 @@
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": [],
-            "server": "src/main.server.ts",
-            "prerender": true,
-            "ssr": {
-              "entry": "server.ts"
-            }
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -73,10 +68,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "angular-shop-recipe:build:production"
+              "buildTarget": "course-project-cmp-databinding-final:build:production"
             },
             "development": {
-              "buildTarget": "angular-shop-recipe:build:development"
+              "buildTarget": "course-project-cmp-databinding-final:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -84,7 +79,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "buildTarget": "angular-shop-recipe:build"
+            "buildTarget": "course-project-cmp-databinding-final:build"
           }
         },
         "test": {
@@ -109,6 +104,6 @@
     }
   },
   "cli": {
-    "analytics": "9e485c62-c412-4415-88ae-d181b23bc542"
+    "analytics": false
   }
 }
